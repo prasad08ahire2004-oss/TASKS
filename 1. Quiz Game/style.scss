@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #f5efe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: sans-serif;
+
+    .container {
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 10px 30px rgba($color: black, $alpha: 0.1);
+
+        width: 100%;
+        max-width: 600px;
+
+        overflow: hidden;
+        position: relative;
+
+        .screen {
+            display: none;
+            // starting mai sare screens ko none rakhenge jo bhi screen dikhane hogi age jake vo active ho jayegi
+            padding: 2rem;
+            text-align: center;
+
+        }
+
+        .screen.active1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            .start-heading {
+                color: orange;
+                font-size: 2.5rem;
+            }
+
+            #start-button {
+                width: 110px;
+                height: 40px;
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 0.5rem;
+                background-color: orange;
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+
+                cursor: pointer;
+                transition: transform 0.1s ease;
+            }
+
+            #start-button:active {
+                transform: scale(0.95);
+            }
+        }
+
+        .screen.active2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            .quiz-header {
+                width: 100%;
+
+                #question-text {
+                    font-size: 1.7rem;
+                    margin-bottom: 1rem;
+                }
+
+                .quiz-info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .quiz-info-para {
+                        color: rgba($color: #000000, $alpha: 0.7);
+                    }
+                }
+            }
+
+            .answer-container {
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 5px;
+
+                .answer-btn {
+                    width: 100%;
+                    height: 60px;
+                    color: #333;
+                    background-color: #f5efe6;
+                    border: 2px solid #eadbc8;
+                    border-radius: 1rem;
+                    cursor: pointer;
+                    text-align: left;
+                    padding: 0.9rem;
+                }
+
+                .answer-btn:hover {
+                    background-color: #eadbc8;
+                    border-color: #dac0ae;
+                }
+
+                .answer-btn.correct {
+                    background-color: #e6fff0;
+                    border-color: #a3f0c4;
+                    color: #28a745;
+                }
+
+                .answer-btn.incorrect {
+                    background-color: #e6fff0;
+                    border-color: #a3f0c4;
+                    color: #dc3545;
+                }
+            }
+
+            .progress-bar {
+                width: 100%;
+                height: 5px;
+                background-color: #f5efe6;
+                border-radius: 2rem;
+
+                #progress {
+                    width: 50%;
+                    height: 100%;
+                    background-color: orange;
+                    border-radius: 2rem;
+                }
+            }
+        }
+
+        .screen.active3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            .result-heading {
+                color: orange;
+                font-size: 2.5rem;
+            }
+
+            .result-info {
+                width: 84%;
+                height: 170px;
+                background-color: #f5efe6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1.5rem;
+                border-radius: 1rem;
+
+                .result-message {
+                    color: orange;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+            }
+
+            #restart-btn {
+                width: 130px;
+                height: 40px;
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 0.5rem;
+                background-color: orange;
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+
+                cursor: pointer;
+                transition: transform 0.1s ease;
+            }
+
+            #restart-btn:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+}

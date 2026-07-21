@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+    
+        <div class="screen" id="start-screen">
+
+            <h1 class="start-heading">Quiz Time!</h1>
+
+            <p>Test your Knowledge with these fun questions.</p>
+
+            <button id="start-button">Start Quiz</button>
+
+        </div>
+
+        <div class="screen active2" id="quiz-screen">
+
+            <div class="quiz-header">
+
+                <h1 id="question-text">Question will be here</h1>
+
+                <div class="quiz-info">
+
+                    <p class="quiz-info-para">
+                        Question <span id="current-question">1</span> of <span>5</span>
+                    </p>
+
+                    <p class="quiz-info-para">
+                        Score: <span id="score">0</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="answer-container" id="answer-container">
+
+                <!-- Answers will be inserted througn javascript code -->
+
+                <div class="answer-btn">
+
+                </div>
+
+                <div class="answer-btn">
+
+                </div>
+
+                <div class="answer-btn">
+
+                </div>
+
+                <div class="answer-btn">
+
+                </div>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div id="progress">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="result-screen" class="screen">
+
+            <h1 class="result-heading">Quiz Results</h1>
+
+            <div class="result-info">
+
+                <p class="result-para">
+                    You scored <span>0</span> out of <span>5</span>
+                </p>
+
+                <div class="result-message">Good job!!!!!! how are you</div>
+
+            </div>
+
+            <button id="restart-btn">Restart Quiz</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
