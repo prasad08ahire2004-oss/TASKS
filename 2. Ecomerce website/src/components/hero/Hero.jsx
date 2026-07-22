@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className='mt-6 h-125 rounded-3xl'>
 
-        <div className='flex gap-25 h-full'>
+        <div className='flex gap-20 h-full'>
 
             <div className='w-1/2 bg-zinc-900 px-7 py-7 rounded-2xl'>
                 <div className='text-sm text-white h-9.5 w-46 bg-zinc-800 rounded-full font-medium flex items-center justify-center'>
