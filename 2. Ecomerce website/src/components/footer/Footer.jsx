@@ -2,6 +2,7 @@ import React from 'react'
 import headphone from '../../assets/headphone.png'
 import jacket from '../../assets/jacket.png'
 import mobile from '../../assets/mobile.png'
+import delivery from '../../assets/delivery.png'
 
 const footer = () => {
   return (
@@ -108,7 +109,54 @@ const footer = () => {
 
         </div>
 
-        <div className='h-full w-[40%] border border-amber-200'>
+        <div className='h-full w-[40%] bg-zinc-800 rounded-2xl p-8'>
+
+            <div className='h-33 w-full'>
+
+                <small className='text-zinc-400'>
+                    Newsletter
+                </small>
+
+                <p className='text-[20px] text-white font-semibold mb-2.5'>
+                    Get exclusive offers
+                </p>
+
+                <small className='text-zinc-400'>
+                    Join our list for access to launches, private sales, and curated recommendation
+                </small>
+
+            </div>
+
+            <div className='h-35 w-full flex flex-col items-center justify-center gap-4'>
+
+                <input type="text" placeholder='Email address' className='bg-black text-zinc-400 px-3 py-2 w-full rounded-2xl' />
+
+                <button className='bg-white text-black px-3 py-2 w-full rounded-2xl hover:scale-105 transition-transform'>
+                    Subscribe
+                </button>
+
+            </div>
+
+            <div className='h-20 w-full bg-black rounded-2xl p-3 flex gap-3'>
+
+                <div className='h-full w-17 bg-amber-50 rounded-full'>
+
+                    <img src={delivery} alt="" className='h-full w-full ' />
+
+                </div>
+
+                <div className='h-full w-35'>
+
+                    <p className='text-[20px] text-white font-semibold'>
+                        Free delivery
+                    </p>
+                    <small className='text-zinc-400'>
+                        On order above $75
+                    </small>
+
+                </div>
+
+            </div>
 
         </div>
 
