@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 const App = () => {
   return (
@@ -8,6 +9,8 @@ const App = () => {
       <main className='min-h-screen'>
 
       <Navbar />
+
+      <Hero />
 
 
       </main>
