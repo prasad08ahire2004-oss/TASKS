@@ -1,5 +1,6 @@
 import React from 'react'
 import coffee from '../assets/coffee.png'
+import desk_background from '../assets/desk_background.png'
 
 const Hero = () => {
   return (
@@ -49,7 +50,7 @@ const Hero = () => {
             </div>
 
             {/* on desktop view this block will appear */}
-            <div className='hidden md:block'>
+            <div className='hidden md:block w-full h-175 bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${desk_background})` }}>
 
             </div>
 
